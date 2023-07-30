@@ -29,6 +29,7 @@ public:
     void remove(PLAYER player);
     PLAYER get_player(int id);
     PLAYER get_player(int id,int &num_testes);
+    int get_size(){return size;}
     void print_list();
     ~Linked_list();
 };
@@ -120,9 +121,11 @@ void Linked_list::add(PLAYER player)
     }else //se a lista não estiver vazia
     {
         tail->next = newNode; //a cauda aponta para o novo nó
-        tail = newNode; //a cauda aponta para o novo nó como sendo a nova cauda
+        // system("pause");
+        tail = newNode; //a cauda agora é o novo nó
     }
     size++;
+    // this->print_list();
 }
 
 Linked_list::Linked_list(/* args */)
