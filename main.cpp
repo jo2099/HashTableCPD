@@ -94,7 +94,7 @@ int main()
     cout << "digite o tamanho da tabela: ";
     cin >> tam_hash;
 
-    nome_arq_saida = "experimento" + to_string(tam_hash) + ".txt";
+    nome_arq_saida = "experimento" + to_string(tam_hash)+".txt";
     ofstream arquivo_saida(nome_arq_saida);
 
     Hash_tab *tabela2 = new Hash_tab(tam_hash); // cria tabela hash com tamanho tam_hash
