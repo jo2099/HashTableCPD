@@ -114,10 +114,10 @@ int main()
         // system("pause");
     }
     cout << "Tabela carregada" << endl;
-    system("pause");
+    // system("pause");
     imprime_parte1(*tabela2, arquivo_saida);
     cout << "Parte 1 impressa" << endl;
-    system("pause");
+    // system("pause");
     imprime_parte2(*tabela2, arquivo_saida, arquivo_consulta);
     cout << "Parte 2 impressa" << endl;
     arquivo_saida.close();
